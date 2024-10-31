@@ -19,12 +19,26 @@ class TestCases(unittest.TestCase):
 
 
     #### Add tests for Time.__eq__
+    def test_Point_eq_1(self):
+        point1 = data.Point(2,15)
+        point2 = data.Point(2,15)
+        self.assertEqual(point1, point2)
 
+    def test_Point_eq_2(self):
+        point1 = data.Point(3, 15)
+        point2 = data.Point(3, 15)
+        self.assertEqual(point1, point2)
     #### Add tests for Time.__repr__
 
+    def test_Point_repr_1(self):
+        point1 = data.Point(1,2)
+        point2 = data.Point(1, 2)
+        self.assertEqual(point1, point2)
 
-
-
+    def test_Point_repr_2(self):
+        point1 = data.Point(5,5)
+        point2 = data.Point(5, 5)
+        self.assertEqual(point1, point2)
     #### Point tests
     def test_Point_1(self):
         point = data.Point(7, 20)
@@ -68,3 +82,5 @@ class TestCases(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+    def test_Point_time_add_1(self):
