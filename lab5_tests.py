@@ -39,7 +39,19 @@ class TestCases(unittest.TestCase):
         self.assertEqual(True, result)
     # Part 5
 
+    def largest_between_1(self):
+        list = [4,3,2,1]
+        lab5.lower = 3
+        lab5.upper = 1
+        result = lab5.largest_between(list)
+        self.assertEqual(None)
 
+    def largest_between_1(self):
+        list = [3,1,2]
+        lab5.lower = 3
+        lab5.upper = 1
+        result = lab5.largest_between(list)
+        self.assertEqual(None)
     # Part 6
     def test_furthest_from_the_origin_1(self):
         points = [data.Point(1, 2), data.Point(3, 4),
